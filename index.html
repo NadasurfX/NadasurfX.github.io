@@ -1,67 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terapia Certa</title>
+    <title>Fisioterapia</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <div class="top-bar">
+            <div class="logo">
+                <h1>Clinifisio</h1>
+            </div>
+            <div class="contact-info">
+                <span>Visite-nos: Rua X, nº Y</span>
+                <span>Ligue para Nós: +351 123 456 789</span>
+                <span>Envie-nos um e-mail: geral@clinifisio.pt</span>
+            </div>
+        </div>
         <nav>
-            <div class="logo">Terapia Certa</div>
             <ul>
-                <li class="dropdown">
-                    <a href="#">Serviços</a>
-                    <ul class="dropdown-content">
-                        <li><a href="pilates.html" target="_blank">Pilates</a></li>
-                        <li><a href="fisio-pelvica.html" target="_blank">Fisioterapia pélvica</a></li>
-                        <li><a href="reab-pelvica.html" target="_blank">Reabilitação pélvica</a></li>
-                        <li><a href="acupuntura.html" target="_blank">Acupuntura</a></li>
-                        <li><a href="drenagem.html" target="_blank">Drenagem linfática</a></li>
-                        <li><a href="orientacao.html" target="_blank">Orientação postural</a></li>
-                        <li><a href="flacidez.html" target="_blank">Tratamento de flacidez</a></li>
-                    </ul>
-                </li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#fisioterapia">Fisioterapia</a></li>
+                <li><a href="#pilates">Pilates</a></li>
+                <li><a href="#locais">Locais</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+                <li><a href="#marcacao">Marcação</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Tua Terapia</h1>
-                <p>Fisioterapeuta Sandra Costa é especialista em oferecer cuidados personalizados e de alta qualidade nas áreas de fisioterapia geral, fisioterapia pélvica, acupuntura e pilates.</p>
-                <a href="#services" class="button">Saber mais</a>
+        <section id="inicio">
+            <div class="carousel">
+                <div class="slides">
+                    <div class="slide active" style="background-image: url('img1.jpg');"></div>
+                    <div class="slide" style="background-image: url('img2.jpg');"></div>
+                    <div class="slide" style="background-image: url('img3.jpg');"></div>
+                </div>
+                <div class="dots">
+                    <span class="dot active" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
+                <div class="carousel-text">
+                    <p>Texto da imagem 1</p>
+                    <p>Texto da imagem 2</p>
+                    <p>Texto da imagem 3</p>
+                </div>
             </div>
         </section>
-        <section id="services" class="section">
-            <h2>Nossos Serviços</h2>
-            <ul>
-                <li id="pilates">Pilates</li>
-                <li id="fisio-pelvica">Fisioterapia pélvica</li>
-                <li id="reab-pelvica">Reabilitação pélvica</li>
-                <li id="acupuntura">Acupuntura</li>
-                <li id="drenagem">Drenagem linfática</li>
-                <li id="orientacao">Orientação postural</li>
-                <li id="flacidez">Tratamento de flacidez</li>
-            </ul>
-        </section>
-        <section id="about" class="section">
-            <h2>Sobre Nós</h2>
-            <p>Fisioterapeuta Sandra Costa é especialista em oferecer cuidados personalizados e de alta qualidade nas áreas de fisioterapia geral, fisioterapia pélvica, acupuntura e pilates. Com anos de experiência e uma dedicação inigualável ao bem-estar dos seus pacientes, combina técnicas tradicionais e modernas para proporcionar tratamentos eficazes e seguros.</p>
-        </section>
-        <section id="contact" class="section">
-            <h2>Contato</h2>
-            <p><strong>Telefone:</strong> 934824599</p>
-            <p><strong>Localização:</strong> Mirandela</p>
-            <p><strong>Redes Sociais:</strong> @TerapiaCerta</p>
-        </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Terapia Certa. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Clinifisio. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
 
