@@ -11,11 +11,8 @@ body {
 }
 
 header {
-    background-color: #f8f8f8;
+    background-color: white;
     border-bottom: 1px solid #ddd;
-}
-
-.top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,8 +26,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    padding: 0;
     margin: 0;
     background-color: #C12378; /* Rosa claro especificado */
 }
@@ -56,9 +52,11 @@ nav ul li a.marcacao {
     margin: 20px auto;
     overflow: hidden;
     border: 1px solid #ddd;
+    display: flex;
 }
 
 .slides {
+    width: 60%;
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
@@ -68,6 +66,38 @@ nav ul li a.marcacao {
     height: 400px;
     background-size: cover;
     background-position: center;
+}
+
+.carousel-text {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.text-box {
+    text-align: center;
+}
+
+.text {
+    display: none;
+    font-size: 18px;
+}
+
+.text.active {
+    display: block;
+}
+
+.saber-mais {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #C12378;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .dots {
@@ -89,22 +119,9 @@ nav ul li a.marcacao {
     background-color: #717171;
 }
 
-.carousel-text {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-
 footer {
     background-color: #f8f8f8;
     text-align: center;
     padding: 10px 0;
     border-top: 1px solid #ddd;
 }
-
