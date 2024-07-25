@@ -5,6 +5,11 @@ body {
     box-sizing: border-box;
 }
 
+.container {
+    margin-left: 8.5cm;
+    margin-right: 8.5cm;
+}
+
 header {
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
@@ -14,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 0;
 }
 
 .logo h1 {
@@ -35,7 +40,7 @@ nav ul {
     justify-content: center;
     padding: 10px 0;
     margin: 0;
-    background-color: #4CAF50;
+    background-color: #ffcccb; /* Rosa claro */
 }
 
 nav ul li {
@@ -43,9 +48,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #add8e6; /* Azul claro */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
+}
+
+nav ul li a.marcacao {
+    font-weight: bold; /* Negrito para Marcação */
 }
 
 .carousel {
@@ -106,3 +115,4 @@ footer {
     padding: 10px 0;
     border-top: 1px solid #ddd;
 }
+
