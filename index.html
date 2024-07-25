@@ -7,54 +7,56 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="logo">
-                <h1>Clinifisio</h1>
+    <div class="container">
+        <header>
+            <div class="top-bar">
+                <div class="logo">
+                    <h1>Clinifisio</h1>
+                </div>
+                <div class="contact-info">
+                    <span>Visite-nos: Rua X, nº Y</span>
+                    <span>Ligue para Nós: +351 123 456 789</span>
+                    <span>Envie-nos um e-mail: geral@clinifisio.pt</span>
+                </div>
             </div>
-            <div class="contact-info">
-                <span>Visite-nos: Rua X, nº Y</span>
-                <span>Ligue para Nós: +351 123 456 789</span>
-                <span>Envie-nos um e-mail: geral@clinifisio.pt</span>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#fisioterapia">Fisioterapia</a></li>
-                <li><a href="#pilates">Pilates</a></li>
-                <li><a href="#locais">Locais</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-                <li><a href="#marcacao">Marcação</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#fisioterapia">Fisioterapia</a></li>
+                    <li><a href="#locais">Locais</a></li>
+                    <li><a href="#pilates">Pilates</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                    <li><a href="#marcacao" class="marcacao">Marcação</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section id="inicio">
-            <div class="carousel">
-                <div class="slides">
-                    <div class="slide active" style="background-image: url('Imagens/H1.jpg');"></div>
-                    <div class="slide" style="background-image: url('Imagens/H1.jpg');"></div>
-                    <div class="slide" style="background-image: url('Imagens/H1.jpg');"></div>
+        <main>
+            <section id="inicio">
+                <div class="carousel">
+                    <div class="slides">
+                        <div class="slide active" style="background-image: url('img1.jpg');"></div>
+                        <div class="slide" style="background-image: url('img2.jpg');"></div>
+                        <div class="slide" style="background-image: url('img3.jpg');"></div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot active" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                    </div>
+                    <div class="carousel-text">
+                        <p>Texto da imagem 1</p>
+                        <p>Texto da imagem 2</p>
+                        <p>Texto da imagem 3</p>
+                    </div>
                 </div>
-                <div class="dots">
-                    <span class="dot active" data-slide="1"></span>
-                    <span class="dot" data-slide="2"></span>
-                    <span class="dot" data-slide="3"></span>
-                </div>
-                <div class="carousel-text">
-                    <p>Texto da imagem 1</p>
-                    <p>Texto da imagem 2</p>
-                    <p>Texto da imagem 3</p>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2024 Clinifisio. Todos os direitos reservados.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2024 Clinifisio. Todos os direitos reservados.</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
