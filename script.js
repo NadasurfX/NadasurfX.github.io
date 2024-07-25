@@ -27,7 +27,8 @@ dots.forEach((dot, index) => {
     });
 });
 
-setInterval(nextSlide, 30000); // Change slide every 30 seconds
+// Muda o slide a cada 30 segundos
+setInterval(nextSlide, 30000);
 
 showSlide(slideIndex);
 
