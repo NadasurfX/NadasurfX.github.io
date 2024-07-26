@@ -1,34 +1,26 @@
-let slideIndex = 0;
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
-const texts = document.querySelectorAll('.text');
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const texts = document.querySelectorAll('.text');
+    let currentIndex = 0;
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        dots[i].classList.remove('active');
-        texts[i].classList.remove('active');
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+            texts[i].classList.toggle('active', i === index);
+            dots[i].classList.toggle('active', i === index);
+        });
+    }
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            showSlide(i);
+            currentIndex = i;
+        });
     });
 
-    slides[index].classList.add('active');
-    dots[index].classList.add('active');
-    texts[index].classList.add('active');
-}
-
-function nextSlide() {
-    slideIndex = (slideIndex + 1) % slides.length;
-    showSlide(slideIndex);
-}
-
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        slideIndex = index;
-        showSlide(slideIndex);
-    });
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }, 3000);
 });
-
-// Muda o slide a cada 30 segundos
-setInterval(nextSlide, 30000);
-
-showSlide(slideIndex);
-
